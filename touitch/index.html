@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Touitch</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="modal fade" id="suscruption-modal" tabindex="-1" aria_labelleby="suscription-modal-label"
+        aria-hidden="true">
+        <div class="modal-lg modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="d-flex align-items-center">
+                        <img src="images/streamer-1.svg" height="48px" width="48px" alt="streamer pic">
+                        <h5 class="modal-title ml-2" id="subscription-modal-label">Charles Leclerc</h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex mb-5 align-items-center">
+                        <div>
+                            <h6>Abonnement de niveau 1</h6>
+                            <p class="mb-0">Se renouvellera chaque mois pour 4,99€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar  navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="purple">Touitch</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#twitch-toggler"
+                aria-controls="twitch-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="twitch-toggler">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Parcourir</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Esports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Musique</a>
+                    </li>
+                </ul>
+                <form class="d-flex search mb-3 mb-lg-0">
+                    <input class="form-control mr-0 search-bar" type="search" placeholder="Rechercher"
+                        aria-label="Rechercher">
+                    <button class="btn btn-dark search-icon disabled" type="submit">
+                        <img src="images/search.svg" width="20px" height="20px" alt="search">
+                    </button>
+            </div>
+            </form>
+            <div class="ml-auto">
+                <button type="button" class="btn btn-dark btn-sm">
+                    Se connecter
+                </button>
+                <button type="button" class="btn btn-primary btn-sm">
+                    S'inscrire
+                </button>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div class="d-none d-lg-block position-fixed left-sidebar">
+        <div class="row">
+            <div class="col-12 d-flex mb-3>">
+                <p class="h6">CHAÎNES RECOMMANDÉES</p>
+                <img class="ml-auto" src="images/arrow-bar-left.svg" alt="flêche" width="16px" height="16px"
+                    data-toggle="tooltip" data-placement="right" title="Masquer">
+            </div>
+
+            <div class="col-12 d-flex streamer mb-3">
+                <div>
+                    <img class="streamer-pic" src="images/streamer-1.svg">
+                </div>
+                <div class="d-flex flex-column streamer-info ml-2">
+                    <p class="streamer-nickname">Charles Leclerc</p>
+                    <p class="streamer-category">F1 2020 </p>
+                </div>
+                <div class="d-flex ml-auto text-right">
+                    <div class="red-dot"></div>
+                    <p class="viewers-count">2 974</p>
+                </div>
+            </div>
+            <div class="col-12 d-flex streamer mb-3">
+                <div>
+                    <img class="streamer-pic" src="images/streamer-2.svg">
+                </div>
+                <div class="d-flex flex-column streamer-info ml-2">
+                    <p class="streamer-nickname">Charles Leclerc</p>
+                    <p class="streamer-category">F1 2020 </p>
+                </div>
+                <div class="d-flex ml-auto text-right">
+                    <div class="red-dot"></div>
+                    <p class="viewers-count">2 974</p>
+                </div>
+            </div>
+            <div class="col-12 d-flex streamer mb-3">
+                <div>
+                    <img class="streamer-pic" src="images/streamer-3.svg">
+                </div>
+                <div class="d-flex flex-column streamer-info ml-2">
+                    <p class="streamer-nickname">Charles Leclerc</p>
+                    <p class="streamer-category">F1 2020 </p>
+                </div>
+                <div class="d-flex ml-auto text-right">
+                    <div class="red-dot"></div>
+                    <p class="viewers-count">2 974</p>
+                </div>
+            </div>
+            <div class="col-12 d-flex streamer mb-3">
+                <div>
+                    <img class="streamer-pic" src="images/streamer-4.svg">
+                </div>
+                <div class="d-flex flex-column streamer-info ml-2">
+                    <p class="streamer-nickname">Charles Leclerc</p>
+                    <p class="streamer-category">F1 2020 </p>
+                </div>
+                <div class="d-flex ml-auto text-right">
+                    <div class="red-dot"></div>
+                    <p class="viewers-count">2 974</p>
+                </div>
+            </div>
+            <div class="col-12 d-flex streamer mb-3">
+                <div>
+                    <img class="streamer-pic" src="images/streamer-5.svg">
+                </div>
+                <div class="d-flex flex-column streamer-info ml-2">
+                    <p class="streamer-nickname">Charles Leclerc</p>
+                    <p class="streamer-category">F1 2020 </p>
+                </div>
+                <div class="d-flex ml-auto text-right">
+                    <div class="red-dot"></div>
+                    <p class="viewers-count">2 974</p>
+                </div>
+            </div>
+            <div class="col-12 d-flex streamer mb-3">
+                <div>
+                    <img class="streamer-pic" src="images/streamer-6.svg">
+                </div>
+                <div class="d-flex flex-column streamer-info ml-2">
+                    <p class="streamer-nickname">Charles Leclerc</p>
+                    <p class="streamer-category">F1 2020 </p>
+                </div>
+                <div class="d-flex ml-auto text-right">
+                    <div class="red-dot"></div>
+                    <p class="viewers-count">2 974</p>
+                </div>
+            </div>
+            <div class="col-12 d-flex streamer mb-3">
+                <div>
+                    <img class="streamer-pic" src="images/streamer-7.svg">
+                </div>
+                <div class="d-flex flex-column streamer-info ml-2">
+                    <p class="streamer-nickname">Charles Leclerc</p>
+                    <p class="streamer-category">F1 2020 </p>
+                </div>
+                <div class="d-flex ml-auto text-right">
+                    <div class="red-dot"></div>
+                    <p class="viewers-count">2 974</p>
+                </div>
+            </div>
+            <div class="col-12 d-flex streamer mb-3">
+                <div>
+                    <img class="streamer-pic" src="images/streamer-8.svg">
+                </div>
+                <div class="d-flex flex-column streamer-info ml-2">
+                    <p class="streamer-nickname">Charles Leclerc</p>
+                    <p class="streamer-category">F1 2020 </p>
+                </div>
+                <div class="d-flex ml-auto text-right">
+                    <div class="red-dot"></div>
+                    <p class="viewers-count">2 974</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            Rjoignez la communautée <span class="purple">Touitch</span> !
+                        </h3>
+                        <p class="card-text">Découvrez les meilleurs streams où que vous soyez</p>
+                        <a href="#" class="btn btn-primary">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <iframe class="twitch-embed" src="https://www.youtube.com/embed/GWYYA7UTQ1s" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container-fluid main-content">
+            <div class="row mt-2">
+                <div class="col-lg-6 col-12 d-flex align-items-center">
+                    <h4>Official F1 race</h4>
+                    <p class="ml-2 mb-1">●</p>
+                    <h4 class="ml-2">il y a 2 mois</h4>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center mb-lg-0 mb-3">
+                    <div class="ml-lg-auto">
+                        <img src="images/eye.svg" widht="16px" height="16px" alt="eye">
+                    </div>
+                    <p class="ml-1 mb-0 light-grey">36 257</p>
+                    <button type="button" class="btn btn-dark btn-sm ml-2">
+                        <img src="images/upload.svg" width="16px" height="16px" alt="share">
+                        <span class="ml-1">Partager</span>
+                    </button>
+                    <div class="btn-group dropleft ml-2">
+                        <button class="btn btn-link dopdown-toggle btn-sm" type="button" id="video-more"
+                            data-toggle="dropdown" aria-expanded="false">
+                            <img src="images/three-dots-vertical.svg" height="24px" width="16px" alt="dots">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="video-more">
+                            <li>
+                                <a class="dropdown-item" href="#">Signaler</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="purple game-title">F1 2020</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-4">
+                <div class="col-lg-6 col-12 d-flex">
+                    <img src="images/streamer-1.svg" height="72px" width="72px" alt="streamer pic">
+                    <div class="d-flex flex-column ml-2">
+                        <div class="mb-1">
+                            <span class="h5">charlesleclerc</span>
+                            <img src="images/patch-check-fll.svg" class="ml-1 mb-1" height="16px" width="16px"
+                                alt="verified">
+                        </div>
+                        <p class="last-live">dernier live : il y a 2 mois</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 text-lg-right mt-lg-0 mt-4">
+                    <button type="button" class="btn btn-primary btn-sm">
+                        <img src="images/heart.svg" height="16px" width="16px" alt="heart">
+                        <span class="ml-1">Suivre</span>
+                    </button>
+                    <button type="button" class="btn btn-dark btn-sm" data-toggle="modal"
+                        data-target="#subscription-modal">
+                        <img src="images/star.svg" height="16px" width="16px" alt="star">
+                        <span class="ml-1">S'abonner</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row mt-5 pb-5">
+                <div class="d-flex align-items-center">
+                    <h4>Diffusions récentes</h4>
+                    <button type="button" class="btn btn-link btn-sm ml-2">
+                        Tout afficher >
+                    </button>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div>
+                        <div class="card bg-dark text-white">
+                            <img src="images/thumbnail-1.jpg" alt="thumbnail">
+                            <div class="card-img-overlay">
+                                <span class="card-text card-content video-duration">1:32:45</span>
+                                <span class="card-text card-content video-view">64 281 vues</span>
+                                <span class="card-text card-content video-date">il y a 3 mois</span>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-2">
+                            <img class="game-img" src="images/thumbnail-1.jpg" alt="thumbnail-game">
+                            <div class="ml-2">
+                                <a href="#" class="mb-1">Grand prix d'Autriche</a>
+                                <h6 class="light-grey mb-1">charlesleclerc</h6>
+                                <h6 class="light-grey">F1 2020</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div>
+                        <div class="card bg-dark text-white">
+                            <img src="images/thumbnail-2.jpg" alt="thumbnail">
+                            <div class="card-img-overlay">
+                                <span class="card-text card-content video-duration">1:32:45</span>
+                                <span class="card-text card-content video-view">64 281 vues</span>
+                                <span class="card-text card-content video-date">il y a 3 mois</span>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-2">
+                            <img class="game-img" src="images/thumbnail-1.jpg" alt="thumbnail-game">
+                            <div class="ml-2">
+                                <a href="#" class="mb-1">Grand prix d'Autriche</a>
+                                <h6 class="light-grey mb-1">charlesleclerc</h6>
+                                <h6 class="light-grey">F1 2020</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div>
+                        <div class="card bg-dark text-white">
+                            <img src="images/thumbnail-3.jpg" alt="thumbnail">
+                            <div class="card-img-overlay">
+                                <span class="card-text card-content video-duration">1:32:45</span>
+                                <span class="card-text card-content video-view">64 281 vues</span>
+                                <span class="card-text card-content video-date">il y a 3 mois</span>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-2">
+                            <img class="game-img" src="images/thumbnail-1.jpg" alt="thumbnail-game">
+                            <div class="ml-2">
+                                <a href="#" class="mb-1">Grand prix d'Autriche</a>
+                                <h6 class="light-grey mb-1">charlesleclerc</h6>
+                                <h6 class="light-grey">F1 2020</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div>
+                        <div class="card bg-dark text-white">
+                            <img src="images/thumbnail-4.jpg" alt="thumbnail">
+                            <div class="card-img-overlay">
+                                <span class="card-text card-content video-duration">1:32:45</span>
+                                <span class="card-text card-content video-view">64 281 vues</span>
+                                <span class="card-text card-content video-date">il y a 3 mois</span>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-2">
+                            <img class="game-img" src="images/thumbnail-1.jpg" alt="thumbnail-game">
+                            <div class="ml-2">
+                                <a href="#" class="mb-1">Grand prix d'Autriche</a>
+                                <h6 class="light-grey mb-1">charlesleclerc</h6>
+                                <h6 class="light-grey">F1 2020</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

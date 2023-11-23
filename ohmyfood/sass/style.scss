@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Manrope&family=Montserrat:ital@0;1&family=Oswald:wght@500&family=Roboto:wght@100&display=swap");
+
+
+//variable//
+
+
+:root {
+    --main-color: #9356dc;
+    --main-bg-color: #f6f6f6;
+    --filter-bg-color: #99e2d0;
+}
+
+body {
+    background: white;
+}
+
+header {
+    margin: auto;
+    width: 100%;
+
+    .logo {
+        display: flex;
+        height: 36px;
+        color: var(--Black, #101010);
+        text-align: center;
+        font-family: "Shrikhand";
+        justify-content: center;
+        align-items: center;
+        padding: 3px 19px 7px 50px;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 17px;
+        margin-top: 10px;
+        line-height: normal;
+    }
+
+}
+
+main {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.headline {
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--Background);
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+
+    .section-title {
+        display: flex;
+        margin: 18%;
+    }
+
+    &.location-title {
+        text-align: center;
+    }
+
+
+    .location {
+        background-color: #eaeaea;
+        display: flex;
+        padding-left: 131px;
+        margin: 0;
+        gap: 11px;
+        height: 80px;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+
+
+
+        & .locate {
+            margin-left: 96px;
+        }
+
+        & .location i {
+            margin-left: 91px
+        }
+
+        & .location-title {
+            color: var(--Grey, #353535);
+            font-family: "Roboto";
+            align-items: center;
+            height: 69px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+        }
+
+        .location-title .locate {
+            margin-left: 91px;
+        }
+
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .btn-research {
+        color: var(--White, #fff);
+        display: block;
+        text-align: center;
+        margin: 15px;
+        width: 218px;
+        height: 50px;
+        padding-top: 10px;
+        font-family: "Roboto";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18.75px;
+        border-radius: 25px;
+        background: var(--Button-Gradient,
+                linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%));
+    }
+
+    /* Shadow/Button */
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    background-color: #fff;
+    width: 100%;
+    height: 387px;
+    padding-top: 0px;
+    left: 20px;
+
+    & .btn-selection {
+        display: block;
+        text-align: center;
+        margin: 15px;
+        width: 322px;
+        height: 72.4px;
+        padding-top: 10px;
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
+        border-radius: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    & .btn-selection {
+        display: block;
+        text-align: center;
+        margin: 15px;
+        width: 322px;
+        height: 72.4px;
+        padding-top: 10px;
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
+        border-radius: 20px;
+    }
+
+    &.btn-selection {
+        flex-direction: column;
+        width: 322.48px;
+        height: 72.379px;
+        border-radius: 20px;
+        background: var(--Background, #f6f6f6);
+        /* Shadow/Instructions */
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    }
+
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.card {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    object-fit: cover;
+    width: 335px;
+    height: 251px;
+}
