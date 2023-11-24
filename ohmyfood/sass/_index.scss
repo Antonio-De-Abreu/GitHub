@@ -12,13 +12,20 @@ $grey_2: #353535;
     font-size: 16px;
     width: 100%;
     height: 50px;
+    padding-top: 15px;
     border-top: 0.5px solid grey;
     color: $grey_2;
     background-color: $grey;
 
-    i.locate.fas.fa-map-marker-alt {
-        padding-top: 22px;
-        padding-right: 10px;
+    & .locate {
+        margin-left: 57px;
+
+        i.locate.fas.fa-map-marker-alt {
+            padding-top: 22px;
+            padding-right: 10px;
+
+        }
+
     }
 }
 
@@ -35,7 +42,7 @@ $grey_2: #353535;
     font-weight: 700;
     line-height: normal;
 
-    & h2 {
+    & .section-title {
         font-weight: bolder;
         font-size: 24px;
         font-style: normal;
@@ -103,6 +110,10 @@ $grey_2: #353535;
         background: #f6f6f6;
         /* Shadow/Instructions */
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+        &:hover {
+            background: var(--primary-2, #F5EDFF);
+        }
     }
 
     a {
@@ -135,20 +146,22 @@ section .restaurants {
         border: 5px solid white;
         border-radius: 20px 20px;
         border-bottom-left-radius: 20px;
-
-        .card img {
-            width: 340.912px;
-            height: 231px;
-            padding-left: 11px;
-        }
-
-        img {
-            width: 340.912px;
-            height: 231px;
-        }
     }
 
+    .card img {
+        width: 340.912px;
+        height: 231px;
+        padding-left: 11px;
+    }
 
+    img {
+        width: 340.912px;
+        height: 231px;
+
+        & img h3.card-title {
+            padding-bottom: 5px;
+        }
+    }
 }
 
 
@@ -180,22 +193,6 @@ footer {
                 margin: 19px;
                 list-style-type: none;
                 text-decoration: none;
-
-                .card-title {
-                    color: #FFF;
-                    display: flex;
-                    font-size: 16px;
-                    justify-content: left;
-                    font-family: "Roboto";
-                    margin: 8px;
-                    font-size: 18px;
-
-                    & .card-subtitule {
-                        color: #000;
-                        font-size: 16px;
-                    }
-
-                }
 
                 ul {
                     list-style-type: none;
