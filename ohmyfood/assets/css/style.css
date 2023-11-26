@@ -147,6 +147,18 @@ p {
     left: 20px;
 }
 
+.circle {
+    width: 25px;
+    position: absolute;
+    height: 25px;
+    margin-top: 19px;
+    background: #9356DC;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: -11px;
+    border-radius:50%;
+}
+
 .selection {
     flex-direction: column;
     width: 322.48px;
@@ -199,7 +211,7 @@ p {
     font-family: "Roboto";
     font-size: 24px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: normal;
     padding-top: 47px;
     padding-right: 143px;
